@@ -90,7 +90,7 @@ fn main() {
                 }
             }
             "3" => {
-                let folder_name = get_user_input("Enter the playlist (folder) name: ");
+                let folder_name = get_user_input("Enter the playlist name: ");
                 let file_name = get_user_input("Enter the music file name: ");
                 if let Err(e) = play_song(&folder_name, &file_name) {
                     eprintln!("Error: {}", e);
